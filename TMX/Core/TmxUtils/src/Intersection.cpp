@@ -124,7 +124,7 @@ bool Intersection::IsPedestrianReportedForLane(int laneId, SpatMessage &msg) {
 
 		string pedestrianBicycleDetect =
 				connectionManeuverAssistForId.node().child("pedBicycleDetect").first_child().name();
-		bool val = istringstream(pedestrianBicycleDetect);	//convert to bool
+		bool val = static_cast<bool>(istringstream(pedestrianBicycleDetect));	//convert to bool
 		if (val) {
 			return true;
 

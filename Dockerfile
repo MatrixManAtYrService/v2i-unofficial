@@ -48,6 +48,21 @@ RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
     rm -rf mysql-connector-c++-1.1.3
 
 # compile J2735
-run cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
+RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
     alias sudo='' && \
     ./setupAsnJ2735_r41.sh
+
+# compile TmxUtils
+RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxUtils && \
+    cmake . && \
+    make
+
+# compile TmxApi
+RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxApi && \
+    cmake . && \
+    make
+
+# compile TmxCore
+RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxCore && \
+    cmake . && \
+    make

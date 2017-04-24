@@ -10,19 +10,21 @@ get_filename_component(TMX_BUILD_DIR ${CMAKE_CURRENT_LIST_DIR} DIRECTORY CACHE)
 get_filename_component(TMX_OAM_DIR ${TMX_BUILD_DIR} DIRECTORY CACHE)
 get_filename_component(CMAKE_SOURCE_COMPONENT_NAME ${CMAKE_SOURCE_DIR} NAME CACHE)
 
-# Retrieve the subversion repo information
-Subversion_WC_INFO(${TMX_OAM_DIR} TMX_OAM)
-Subversion_WC_INFO(${CMAKE_SOURCE_DIR}/.. SOURCE_DIR)
+# the lines below are commented out because they depend on subversion stuff that was neigher included nor documented
+
+## Retrieve the subversion repo information
+#Subversion_WC_INFO(${TMX_OAM_DIR} TMX_OAM)
+#Subversion_WC_INFO(${CMAKE_SOURCE_DIR}/.. SOURCE_DIR)
 
 # Just a quick check to ensure both are from the same Subversion source
-if (NOT TMX_OAM_WC_ROOT STREQUAL SOURCE_DIR_WC_ROOT)
-    message(WARNING "Subversion root ${TMX_OAM_WC_URL} is not the same source as ${SOURCE_DIR_WC_URL}.")
-endif()
+#if (NOT TMX_OAM_WC_ROOT STREQUAL SOURCE_DIR_WC_ROOT)
+#    message(WARNING "Subversion root ${TMX_OAM_WC_URL} is not the same source as ${SOURCE_DIR_WC_URL}.")
+#endif()
 
 # Find the local directory of the repository for use later
-string(REGEX REPLACE "^${TMX_OAM_WC_ROOT}" "" TMX_OAM_WC_SUBPATH "${TMX_OAM_WC_URL}")
-string(REGEX REPLACE "${TMX_OAM_WC_SUBPATH}$" "" TMX_OAM_WC_LOCALDIR "${TMX_OAM_DIR}")
-string(REGEX REPLACE "^${TMX_OAM_WC_ROOT}" "" SOURCE_DIR_WC_SUBPATH "${SOURCE_DIR_WC_URL}")
+#string(REGEX REPLACE "^${TMX_OAM_WC_ROOT}" "" TMX_OAM_WC_SUBPATH "${TMX_OAM_WC_URL}")
+#string(REGEX REPLACE "${TMX_OAM_WC_SUBPATH}$" "" TMX_OAM_WC_LOCALDIR "${TMX_OAM_DIR}")
+#string(REGEX REPLACE "^${TMX_OAM_WC_ROOT}" "" SOURCE_DIR_WC_SUBPATH "${SOURCE_DIR_WC_URL}")
 string(REGEX REPLACE "${SOURCE_DIR_WC_SUBPATH}/${CMAKE_SOURCE_COMPONENT_NAME}$" "" SOURCE_DIR_WC_LOCALDIR "${CMAKE_SOURCE_DIR}")
 
 # Try to determine the config type from the working directory
