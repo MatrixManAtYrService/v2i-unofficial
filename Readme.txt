@@ -1,3 +1,5 @@
+Please be aware that this repo is a work in progress, and that it contains my own changes (see commit history for details).  For the official copy, see https://www.itsforge.net/ and search for "v2i hub".
+
 Open Source Overview
 ============================
 V2I Hub
@@ -12,7 +14,7 @@ Security and Passwords
 ----------------------
 V2I Hub is middleware that runs on Linux Ubuntu 14.04 LTS. It is recommended that appropriate
 security and firewall settings be used on the computer running Linux, including conforming to your 
-agency’s security best practices and IT protocols.
+agencyâ€™s security best practices and IT protocols.
 
 For configuration and maintenance, the V2I Hub software includes an Administration Portal that runs 
 in a web browser on the host device. The default Username for accessing this Administration Portal is 
@@ -98,11 +100,11 @@ Start with the TmxUtils project, then the TmxApi, followed by the TmxCore.  Afte
 compile any of the projects from the Plugins directory.
 
 To compile a project:
-	• Change directory to the Debug or Release subfolder for the project (cd Debug)
-	• Run cmake (cmake ..)
-	• Run make (make)
+	â€¢ Change directory to the Debug or Release subfolder for the project (cd Debug)
+	â€¢ Run cmake (cmake ..)
+	â€¢ Run make (make)
 		o This will compile the project
-	• To create a deployment package type make package
+	â€¢ To create a deployment package type make package
 
 
 Set Up and Configuration Instructions
