@@ -1,5 +1,7 @@
 Please be aware that this repo is a work in progress, and that it contains my own changes (see commit history for details).  For the official copy, see https://www.itsforge.net/ and search for "v2i hub".
 
+What follows is the original Readme.txt:
+
 Open Source Overview
 ============================
 V2I Hub
