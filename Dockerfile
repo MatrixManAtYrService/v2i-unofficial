@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER M@ Rixman (MatrixManAtYrService on github)
+MAINTAINER M@ Rixman (MatrixManAtYrService on github, mattrixman@fastmail.com)
 
 # install dependencies
 RUN apt-get update && apt-get install -y \
@@ -44,35 +44,17 @@ RUN ln -s /usr/lib/x86_64-linux-gnu/libmysqlclient.so /usr/lib/x86_64-linux-gnu/
 RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
     tar xzf mysql-connector-c++-1.1.3.tar.gz && \
     cd mysql-connector-c++-1.1.3 && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
+    cmake . && \
     make && \
-    make install && \
-    cd ../.. && \
-    rm -rf mysql-connector-c++-1.1.3
+    make install
 
-# compile mysql-connector
+# compile mysql-J2735
 RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
     tar xzf asn_j2735_r41.tar.gz && \
     cd asn_j2735_r41 && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
+    cmake . && \
     make && \
-    make install && \
-    cd .. && \
-    rm -rf mysql-connector-c++-1.1.3
-
-# compile J2735
-RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/asn_j2735_r41 && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
-    make && \
-    make install && \
-    cd ../.. && \
-    rm -rf asn_j2735_r41
+    make install
 
 # compile TmxUtils
 RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxUtils && \

@@ -33,4 +33,20 @@
 
 # CMake Generated Files
 **/CMakeCache.txt
-**/build/
+TMX-OAM/Externals/asn_j2735_r41/
+TMX-OAM/Externals/mysql-connector-c++-1.1.3/
+TMX/Core/TmxApi/CMakeFiles/
+TMX/Core/TmxApi/Makefile
+TMX/Core/TmxApi/TmxApi/
+TMX/Core/TmxApi/cmake_install.cmake
+TMX/Core/TmxCore/CMakeFiles/
+TMX/Core/TmxCore/Makefile
+TMX/Core/TmxCore/TmxCore/
+TMX/Core/TmxCore/cmake_install.cmake
+TMX/Core/TmxCore/tmxcore
+TMX/Core/TmxUtils/CMakeFiles/
+TMX/Core/TmxUtils/CTestTestfile.cmake
+TMX/Core/TmxUtils/Makefile
+TMX/Core/TmxUtils/TmxUtils/
+TMX/Core/TmxUtils/cmake_install.cmake
+
