@@ -34,35 +34,63 @@ RUN apt-get update && apt-get install -y \
 # copy code into image
 COPY . /usr/local/src/v2i-hub
 
-# add symlink
+# add symlink to resolve name discrepency ('libmysqlclient' != 'libmysqlclient_r')
+# not sure where the name mismatch came from, but it seems to work
+
 RUN ln -s /usr/lib/x86_64-linux-gnu/libmysqlclient.so /usr/lib/x86_64-linux-gnu/libmysqlclient_r.so
+#RUN ln -s /usr/lib/arm-linux-gnueabihf/libmysqlclient.so /usr/lib/arm-linux-gnueabihf/libmysqlclient_r.so
 
 # compile mysql-connector
 RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
     tar xzf mysql-connector-c++-1.1.3.tar.gz && \
     cd mysql-connector-c++-1.1.3 && \
-    cmake . && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make install && \
+    cd ../.. && \
+    rm -rf mysql-connector-c++-1.1.3
+
+# compile mysql-connector
+RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
+    tar xzf asn_j2735_r41.tar.gz && \
+    cd asn_j2735_r41 && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
     make && \
     make install && \
     cd .. && \
     rm -rf mysql-connector-c++-1.1.3
 
 # compile J2735
-RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
-    alias sudo='' && \
-    ./setupAsnJ2735_r41.sh
+RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/asn_j2735_r41 && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make install && \
+    cd ../.. && \
+    rm -rf asn_j2735_r41
 
 # compile TmxUtils
 RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxUtils && \
-    cmake . && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
     make
 
 # compile TmxApi
 RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxApi && \
-    cmake . && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
     make
 
 # compile TmxCore
 RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxCore && \
-    cmake . && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
     make
