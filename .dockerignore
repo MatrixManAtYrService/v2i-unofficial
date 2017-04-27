@@ -3,16 +3,13 @@
     ./TMX-OAM/Externals/asn_j2735_r41/**/*
     ./TMX-OAM/Externals/mysql-connector*/**/*
 
-    ./TMX/Core/TmxUtils/CMakeFiles/**/*
-    ./TMX/Core/TmxUtils/CTestTestfile.cmake
-    ./TMX/Core/TmxUtils/Makefile
-    ./TMX/Core/TmxUtils/TmxUtils/**/*
-    ./TMX/Core/TmxUtils/cmake_install.cmake
+    ./TMX/Core/TmxUtils/Debug/**/*
 
     ./TMX/Core/TmxApi/CMakeFiles/**/*
     ./TMX/Core/TmxApi/Makefile
     ./TMX/Core/TmxApi/TmxApi/**/*
     ./TMX/Core/TmxApi/cmake_install.cmake
+    ./TMX/Core/TmxApi/libtmxapi*
 
     ./TMX/Core/TmxCore/CMakeFiles/**/*
     ./TMX/Core/TmxCore/Makefile
@@ -29,4 +26,3 @@
     ./TMX/Plugins/RtcmPlugin/build/**
     ./TMX/Plugins/SpatPlugin/build/**
     ./TMX/Plugins/UtcPlugin/build/**
-

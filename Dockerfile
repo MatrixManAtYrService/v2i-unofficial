@@ -58,16 +58,14 @@ RUN cd /usr/local/src/v2i-hub/TMX-OAM/Externals/ && \
 
 # compile TmxUtils
 RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxUtils && \
-    mkdir build && \
-    cd build && \
+    mkdir Debug && \
+    cd Debug && \
     cmake .. && \
     make
 
 # compile TmxApi
 RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxApi && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
+    cmake . && \
     make
 
 # compile TmxCore
