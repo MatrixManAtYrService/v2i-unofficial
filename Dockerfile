@@ -76,3 +76,76 @@ RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxCore && \
     cd build && \
     cmake .. && \
     make
+
+## compile AradaReceiverPlugin
+#RUN cd /usr/local/src/v2i-hub/TMX/Plugins/AradaReceiverPlugin && \
+#    mkdir build && \
+#    cd build && \
+#    cmake .. && \
+#    make && \
+#    make plugin
+
+# broken, see https://www.itsforge.net/index.php/forum/v2i-hub-issue-tracker/99-aradareceiverplugin-fatal-error-wave-h-no-such-file-or-directory#173
+
+# compile CswPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/CswPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
+
+# compile DmsPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/DmsPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
+
+# compile DsrcImmediateForwardPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/DsrcImmediateForwardPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
+
+# compile LocationPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/LocationPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
+
+# compile MapPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/MapPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
+
+# compile RtcmPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/RtcmPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
+
+# compile SpatPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/AradaReceiverPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make
+
+# compile UtcPlugin
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/UtcPlugin && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make plugin
