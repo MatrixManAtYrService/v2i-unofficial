@@ -1,28 +1,46 @@
 # cmake generated files
     **/CMakeCache.txt
-    ./TMX-OAM/Externals/asn_j2735_r41/**/*
-    ./TMX-OAM/Externals/mysql-connector*/**/*
+    TMX-OAM/Externals/asn_j2735_r41/**/*
+    TMX-OAM/Externals/mysql-connector*/**/*
 
-    ./TMX/Core/TmxUtils/Debug/**/*
+    TMX/Core/TmxUtils/Debug/**/*
+    TMX/Core/TmxUtils/Debug
 
-    ./TMX/Core/TmxApi/CMakeFiles/**/*
-    ./TMX/Core/TmxApi/Makefile
-    ./TMX/Core/TmxApi/TmxApi/**/*
-    ./TMX/Core/TmxApi/cmake_install.cmake
-    ./TMX/Core/TmxApi/libtmxapi*
+    TMX/Core/TmxApi/CMakeFiles/**/*
+    TMX/Core/TmxApi/Makefile
+    TMX/Core/TmxApi/TmxApi/**/*
+    TMX/Core/TmxApi/cmake_install.cmake
+    TMX/Core/TmxApi/libtmxapi*
 
-    ./TMX/Core/TmxCore/CMakeFiles/**/*
-    ./TMX/Core/TmxCore/Makefile
-    ./TMX/Core/TmxCore/TmxCore/**/*
-    ./TMX/Core/TmxCore/cmake_install.cmake
-    ./TMX/Core/TmxCore/tmxcore
+    TMX/Core/TmxCore/CMakeFiles/**/*
+    TMX/Core/TmxCore/Makefile
+    TMX/Core/TmxCore/TmxCore/**/*
+    TMX/Core/TmxCore/cmake_install.cmake
+    TMX/Core/TmxCore/tmxcore
 
-    ./TMX/Plugins/AradaReceiverPlugin/build/**
-    ./TMX/Plugins/CswPlugin/build/**
-    ./TMX/Plugins/DmsPlugin/build/**
-    ./TMX/Plugins/DsrcImmediateForwardPlugin/build/**
-    ./TMX/Plugins/LocationPlugin/build/**
-    ./TMX/Plugins/MapPlugin/build/**
-    ./TMX/Plugins/RtcmPlugin/build/**
-    ./TMX/Plugins/SpatPlugin/build/**
-    ./TMX/Plugins/UtcPlugin/build/**
+    TMX/Plugins/AradaReceiverPlugin/build
+    TMX/Plugins/AradaReceiverPlugin/build/**/*
+
+    TMX/Plugins/CswPlugin/build
+    TMX/Plugins/CswPlugin/build/**/*
+
+    TMX/Plugins/DmsPlugin/build
+    TMX/Plugins/DmsPlugin/build/**/*
+
+    TMX/Plugins/DsrcImmediateForwardPlugin/build
+    TMX/Plugins/DsrcImmediateForwardPlugin/build/**/*
+
+    TMX/Plugins/LocationPlugin/build
+    TMX/Plugins/LocationPlugin/build/**/*
+
+    TMX/Plugins/MapPlugin/build
+    TMX/Plugins/MapPlugin/build/**/*
+
+    TMX/Plugins/RtcmPlugin/build
+    TMX/Plugins/RtcmPlugin/build/**/*
+
+    TMX/Plugins/SpatPlugin/build
+    TMX/Plugins/SpatPlugin/build/**/*
+
+    TMX/Plugins/UtcPlugin/build
+    TMX/Plugins/UtcPlugin/build/**/*

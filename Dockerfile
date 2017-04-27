@@ -81,7 +81,7 @@ RUN cd /usr/local/src/v2i-hub/TMX/Core/TmxCore && \
 #    cd build && \
 #    cmake .. && \
 #    make && \
-#    make plugin
+#    make package
 
 # broken, see https://www.itsforge.net/index.php/forum/v2i-hub-issue-tracker/99-aradareceiverplugin-fatal-error-wave-h-no-such-file-or-directory#173
 
@@ -91,7 +91,7 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/CswPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
 
 # compile DmsPlugin
 RUN cd /usr/local/src/v2i-hub/TMX/Plugins/DmsPlugin && \
@@ -99,7 +99,7 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/DmsPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
 
 # compile DsrcImmediateForwardPlugin
 RUN cd /usr/local/src/v2i-hub/TMX/Plugins/DsrcImmediateForwardPlugin && \
@@ -107,7 +107,7 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/DsrcImmediateForwardPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
 
 # compile LocationPlugin
 RUN cd /usr/local/src/v2i-hub/TMX/Plugins/LocationPlugin && \
@@ -115,7 +115,7 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/LocationPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
 
 # compile MapPlugin
 RUN cd /usr/local/src/v2i-hub/TMX/Plugins/MapPlugin && \
@@ -123,7 +123,7 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/MapPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
 
 # compile RtcmPlugin
 RUN cd /usr/local/src/v2i-hub/TMX/Plugins/RtcmPlugin && \
@@ -131,10 +131,10 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/RtcmPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
 
 # compile SpatPlugin
-RUN cd /usr/local/src/v2i-hub/TMX/Plugins/AradaReceiverPlugin && \
+RUN cd /usr/local/src/v2i-hub/TMX/Plugins/SpatPlugin && \
     mkdir build && \
     cd build && \
     cmake .. && \
@@ -146,4 +146,4 @@ RUN cd /usr/local/src/v2i-hub/TMX/Plugins/UtcPlugin && \
     cd build && \
     cmake .. && \
     make && \
-    make plugin
+    make package
