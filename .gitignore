@@ -45,7 +45,7 @@ TMX-OAM/Externals/mysql-connector-c++-1.1.3/
 **/Debug/
 TMX/Core/TmxApi/TmxApi/
 TMX/Core/TmxCore/TmxCore/
-
+TMX/Core/TmxUtils/TmxUtils/
 ./TMX/Plugins/AradaReceiverPlugin/build/**
 ./TMX/Plugins/CswPlugin/build/**
 ./TMX/Plugins/DmsPlugin/build/**
