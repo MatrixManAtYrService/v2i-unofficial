@@ -17,3 +17,9 @@ find_package ( NetSNMP REQUIRED )
 
 target_include_directories( ${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS} ${XercesC_INCLUDE_DIRS} ${NETSNMP_INCLUDE_DIRS} )
 target_link_libraries( ${PROJECT_NAME} rt ${Boost_LIBRARIES} ${XercesC_LIBRARIES} ${NETSNMP_LIBRARIES} )
+
+# also build as a library so it can be linked to
+add_library(${PROJECT_NAME}_lib ${SOURCES} )
+target_include_directories( ${PROJECT_NAME}_lib PUBLIC ${Boost_INCLUDE_DIRS} ${XercesC_INCLUDE_DIRS} ${NETSNMP_INCLUDE_DIRS} )
+target_link_libraries( ${PROJECT_NAME}_lib rt ${Boost_LIBRARIES} ${XercesC_LIBRARIES} ${NETSNMP_LIBRARIES} )
+
