@@ -2,7 +2,7 @@
 ORIG=$(pwd)
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [ ! -d $DIR/TMX-OAM/Externals/mysql-connector-c++-1.1.3 ]
+if [ ! -d $DIR/TMX-OAM/Externals/mysql-connector-c++-1.1.3 ] ; then
     cd $DIR/TMX-OAM/Externals/ && \
         tar xzf mysql-connector-c++-1.1.3.tar.gz && \
         cd mysql-connector-c++-1.1.3 && \
@@ -10,7 +10,7 @@ if [ ! -d $DIR/TMX-OAM/Externals/mysql-connector-c++-1.1.3 ]
         make
 fi
 
-if [ ! -d $DIR/TMX-OAM/Externals/asn_j2735_r41 ]
+if [ ! -d $DIR/TMX-OAM/Externals/asn_j2735_r41 ] ; then
     cd $DIR/TMX-OAM/Externals/ && \
         tar xzf asn_j2735_r41.tar.gz && \
         cd asn_j2735_r41 && \
