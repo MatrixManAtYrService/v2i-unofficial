@@ -40,5 +40,5 @@ Here is an example of its usage
 
 		    std::cout << decoded.get_Latitude() << std::endl;
 	            std::cout << decoded.get_Longitude() << std::endl;
-                    ...
+    }
 
