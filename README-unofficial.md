@@ -28,6 +28,8 @@ This option isolates the build from your machine, if you're not in linux yoursel
     
     # copy the build directory to ~/v2i-hub
     docker cp $CONTAINERID:/usr/local/src/v2i-hub ~/v2i-hub
+    
+    # remove the container
     docker rm $CONTAINERID
 </pre>
     
