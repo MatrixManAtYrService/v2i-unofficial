@@ -9,7 +9,7 @@ This fork doesn't aim to make runtime functionality changes.  Instead its goal i
 Example Use
 -----------
 
-Suppose you want to decode the J2735 BSM message.  After building the v2i hub, you'll want to link to some of its binaries.  Here is an excerpt from a CMakeLists.txt file in project that does so:
+Suppose you want to decode the J2735 BSM message.  After [building](README-unofficial.md) the v2i hub, you'll want to link to some of its binaries.  Here is an excerpt from a CMakeLists.txt file in project that does so:
 
     target_include_directories(BSM_Adapter PUBLIC ${CMAKE_SOURCE_DIR}/v2i-hub/TMX/Common/TmxMessages/include/)
     target_include_directories(BSM_Adapter PUBLIC ${CMAKE_SOURCE_DIR}/v2i-hub/TMX/Core/TmxApi/)
