@@ -2,6 +2,7 @@
 
 See the  [Dockerfile](Dockerfile) for step by step instructions on building each piece.
 At the very least, you'll need to install the packages listed there and create the symbolic link.
+
 Then you can decide which of the two sections that follow is more relevant for you.
 
 ## Use the v2i-hub docker image as a base image for your project
