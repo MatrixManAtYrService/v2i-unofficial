@@ -39,6 +39,6 @@ Here is an example of its usage
 		    tmx::utils::BsmConverter::ToDecodedBsmMessage(bsm, decoded);
 
 		    std::cout << decoded.get_Latitude() << std::endl;
-	      std::cout << decoded.get_Longitude() << std::endl;
+	            std::cout << decoded.get_Longitude() << std::endl;
         ...
 
