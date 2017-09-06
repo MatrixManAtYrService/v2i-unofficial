@@ -3,7 +3,7 @@ v2i-unofficial
 
 This is a fork of the FHWA's v2i-hub.  The original can be found [here](https://www.itsforge.net/index.php/community/explore-applications/for-search-results#/40/125)
 
-This fork doesn't aim to make runtime functionality changes.  Instead its goal is to streamline the setup process, which had some kinks in it.  For instructions on using the streamlined setup, see [README-unofficial.md](README-unofficial.md).  There is also the [original README}(Readme-official.txt).
+This fork doesn't aim to make runtime functionality changes.  Instead its goal is to streamline the setup process, which had some kinks in it.  For instructions on using the streamlined setup, see [README-unofficial.md](README-unofficial.md).  There is also the [original README](Readme-official.txt).
 
 
 Example Use
