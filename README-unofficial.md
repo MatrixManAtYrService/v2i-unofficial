@@ -40,7 +40,8 @@ This option isolates the build from your machine, if you're not in linux yoursel
 
 This option assumes you're using ubuntu 16.04, it has been tested on x86 and ARMv7
 
-Be sure to first install the packages mentioned in [Dockerfile](Dockerfile)
+Be sure to first install the packages mentioned in [Dockerfile](Dockerfile).
+
 If you run into an error regarding `libmysqlclient_r` then you'll also need to create the symbolic link (see line 40).
 Then run:
 
@@ -49,4 +50,5 @@ Then run:
     ./build.sh          # builds everything else
 
 Your binaries will be in folders called `build`, see those build scripts for details.
+
 One way to incorporate this into your project is to include v2i-unofficial as a git submodule and then call the above scripts as part of your build process.
